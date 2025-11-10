@@ -1,15 +1,6 @@
-import { useSelector, useDispatch } from 'react-redux';
-import { increment } from './features/counterSlice';
+import Counter from './features/Counter';
 
 const App = () => {
-  // const counter = useSelector((state) => state.counter);
-  const count = useSelector((state) => state.counter.count);
-  const dispatch = useDispatch();
-  return (
-    <div>
-      <h2>{count}</h2>
-      <button onClick={() => dispatch(increment())}>+</button>
-    </div>
-  );
+  return <Counter />;
 };
 export default App;
